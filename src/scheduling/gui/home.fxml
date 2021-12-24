@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="786.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scheduling.gui.HomeController">
+   <children>
+      <Label layoutX="141.0" layoutY="45.0" prefHeight="40.0" prefWidth="176.0" text="Customers">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="addCustomerB" layoutX="136.0" layoutY="89.0" mnemonicParsing="false" onAction="#addCustomerAction" text="Add Customer" />
+      <Button fx:id="viewCustomersB" layoutX="301.0" layoutY="89.0" mnemonicParsing="false" onAction="#viewCustomersAction" text="View Customers" />
+      <Button fx:id="logoutB" layoutX="642.0" layoutY="20.0" mnemonicParsing="false" onAction="#logoutAction" text="LOGOUT" />
+      <Label layoutX="141.0" layoutY="223.0" prefHeight="40.0" prefWidth="176.0" text="Reports">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="viewReportB" layoutX="139.0" layoutY="356.0" mnemonicParsing="false" onAction="#onViewReportAction" text="Vew Report" />
+      <Label layoutX="141.0" layoutY="131.0" prefHeight="40.0" prefWidth="176.0" text="Appointments">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="viewAppointmentB" layoutX="141.0" layoutY="175.0" mnemonicParsing="false" onAction="#viewAppointmentsAction" text="View Appointments" />
+      <Label layoutX="327.0" layoutY="131.0" prefHeight="40.0" prefWidth="176.0" text="Contacts">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="addContactB1" layoutX="332.0" layoutY="175.0" mnemonicParsing="false" onAction="#addContactAction" text="Add Contact" />
+      <RadioButton fx:id="customerAppointmentsRB" layoutX="141.0" layoutY="293.0" mnemonicParsing="false" text="Customer appointments by type and month" />
+      <RadioButton fx:id="contactAppointmentsRB" layoutX="141.0" layoutY="263.0" mnemonicParsing="false" text="Appointments for Each Contact" />
+      <RadioButton fx:id="completedAppointmentsRB" layoutX="141.0" layoutY="321.0" mnemonicParsing="false" text="Completed Appointments" />
+   </children>
+</AnchorPane>
